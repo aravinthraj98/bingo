@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            width:30px;
+            height:30px;
+        }
+        input{
+           width:30px;
+            height:30px;  
+        }
+    </style>
+</head>
+<body>
+ 
+   <form action='#' id='form'>
+    <h1>set ur input..or click computer for random input</h1>
+    <p id='user'></p>
+<input type='submit' onsubmit="return false" id='sub'   style='width:100px;' onclick=userget();>
+</form>
+<p id='choice'>
+ <input type="submit" onclick=fill(value);  value='computer' style='width:100px;'></p>
+
+
+    <p id='number'></p>
+    <p id='computer' style='display:none;'></p>
+    <p id='c'></p>
+    
+</body>
+
+</html>
+<script src='/bingo.js'></script>
