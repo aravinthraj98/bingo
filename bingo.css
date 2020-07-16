@@ -3,10 +3,17 @@ body{
 }
 button{
     width:10%;
-    height:10%;
-    font-size: xx-large;
+    height:20%;
+    font-size: x-large;
+    
     background-color:goldenrod;
 }
+@media screen and (min-width:601px){
+    button{
+        font-size: auto;
+    }
+}
+
 input{
    width:30px;
     height:30px;  
