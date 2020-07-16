@@ -1,0 +1,49 @@
+body{
+    background-color: grey;
+}
+button{
+    width:10%;
+    height:10%;
+    font-size: xx-large;
+    background-color:goldenrod;
+}
+input{
+   width:30px;
+    height:30px;  
+}
+form{
+    text-align: center;
+}
+#choice{
+    text-align: center;
+
+}
+#user{
+    text-align: center;
+    padding-top: 10%;
+
+}
+#computer{
+    text-align: center;
+
+}
+#number{
+    text-align: center;
+    padding-top: 10%;
+    
+}
+#c{
+text-align: center;
+font-size: xx-large;
+}
+h1{
+    text-align: center;
+    color:white;
+}
+#win{
+    text-align: center;
+    text-decoration: lavenderblush;
+    text-shadow: lightcoral;
+    font-size: xx-large;
+    color:yellow;
+}

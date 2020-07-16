@@ -19,6 +19,7 @@
             computerpush();
         }
     }
+    var BINGO=['B','I','N','G','O'];
    var number=[];
    var number1=[];
    var random=[];
@@ -141,6 +142,8 @@ function clicked(u,v,j){
 
             if(uchoice[i].length==0){
                 uchoice.splice(i,1);
+                document.getElementById('win').innerHTML+=BINGO[0];
+                BINGO.splice(0,1);
             }
             console.log(uchoice[i]);
           }
@@ -187,6 +190,8 @@ function clicked(u,v,j){
 
             if(uchoice[i].length==0){
                 uchoice.splice(i,1);
+                document.getElementById('win').innerHTML+=BINGO[0];
+                BINGO.splice(0,1);
             }
             
             //console.log(uchoice[i]);
@@ -244,7 +249,7 @@ function clicked(u,v,j){
         }
      }
      document.getElementById('c'+b).click();
-     document.getElementById('c').innerHTML=random1[b-1];
+     document.getElementById('c').innerHTML='computer CHOICE:'+random1[b-1];
      var cl=random2.splice(a-1,1);
      document.getElementById('number').style.pointerEvents='';
     //  var chance='user';
@@ -270,6 +275,9 @@ function clicked(u,v,j){
      for(i=1;i<=25;i++){
          var u='u'+i;
          var v=document.getElementById(u).value;
+         if(v.length==0){
+             break;
+         }
          if(v in randomu){
              alert('no is repeated,no repeatation allowed');
              document.getElementById(u).focus();
