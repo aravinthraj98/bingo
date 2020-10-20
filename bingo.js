@@ -264,7 +264,7 @@ function clicked(u,v,j){
            br='<br>';
          }
          var id='u'+i;
-         var input=`<input type='number' id=${id} pattern='\d{1-25}' max=25 required>${br}`;
+         var input=`<input type='number' id=${id} pattern='\d{1-25}' min=1 max=25 required>${br}`;
          document.getElementById('user').innerHTML+=input;
 
 
